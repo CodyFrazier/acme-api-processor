@@ -15,6 +15,26 @@ const productsInPriceRange = (products, rangeObj) => {
 	});
 }
 
+const groupCompaniesByLetter = (companies) => {
+	//returns an object, keys are each letter, values are array of companies with first letter equal to key.
+}
+
+const groupCompaniesByState = (companies) => {
+	//return an object, keys are states, values are array of companies in that state.
+}
+
+const processOffers = ({ companies, products, offerings }) => {
+	//return array of offers. Each one has a company and product
+}
+
+const companiesByNumberOfOfferings = (companies, offerings, num) => {
+	//return names of companies with num offerings or more.
+}
+
+const processProducts = ({ products, offerings }) => {
+	//return array of products with average price
+}
+
 const companies = grabData('companies').then(company => {return company});
 const products = grabData('products').then(product => {return product});
 const offerings = grabData('offerings').then(offer => {return offer});
